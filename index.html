@@ -1,0 +1,14 @@
+<html>
+  <body>
+    <button onclick="ye()">go to about:blank</button>
+    <script>
+      function ye() {
+        var thewindow = window.open("about:blank");
+        const iframe = document.createElement("iframe");
+        iframe.style.display = "none";
+        iframe.src = 'main.html';
+        document.body.appendChild(iframe);
+      }
+    </script>
+  </body>
+</html>
